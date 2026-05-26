@@ -74,3 +74,28 @@ test("Sélecteur éléments avec Filter", async ({ page }) => {
     .locator("input")
     .fill("Test3");
 });
+
+test("Sélecteur éléments en fonction de son index", async ({ page }) => {
+  await page.locator(':text-is("Admin")').click();
+
+  // Méthode 1
+  await page
+    .locator(".oxd-grid-item--gutters")
+    .first()
+    .locator("input")
+    .fill("test4");
+
+  // Méthode 2
+  // await page
+  //   .locator(".oxd-grid-item--gutters")
+  //   .nth(0)
+  //   .locator("input")
+  //   .fill("test4");
+
+  // Se positionner sur le 3ème élément
+  await page
+    .locator(".oxd-grid-item--gutters")
+    .nth(2)
+    .locator("input")
+    .fill("test5");
+});
