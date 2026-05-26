@@ -41,3 +41,36 @@ test("Sélecteurs de type Accessibilité", async ({ page }) => {
   //Sélecteurs par Title
   await page.getByTitle("Help").click();
 });
+
+test("Sélecteur éléments enfants", async ({ page }) => {
+  await page.locator(':text-is("Admin")').click();
+
+  // Méthode 1
+  await page
+    .locator(".oxd-grid-item--gutters", {
+      hasText: "Username",
+    })
+    .locator("input")
+    .fill("Test");
+
+  // Méthode 2
+  //await page.locator('.oxd-grid-item :hasText("Username") input').fill("Test2");
+});
+
+test("Sélecteur éléments avec Filter", async ({ page }) => {
+  await page.locator(':text-is("Admin")').click();
+
+  // Méthode 1
+  // await page
+  //   .locator(".oxd-grid-item--gutters")
+  //   .filter({ has: page.locator("input") })
+  //   .getByPlaceholder("Type for hints...")
+  //   .fill("Test3");
+
+  // Méthode 2
+  await page
+    .locator(".oxd-grid-item--gutters")
+    .filter({ hasText: "Employee Name" })
+    .locator("input")
+    .fill("Test3");
+});
