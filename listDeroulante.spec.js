@@ -60,4 +60,27 @@ test("Dropdown list", async ({ page }) => {
   await expect(listeDeroulante_EmpltSts).toBeVisible();
   await expect(listeDeroulante_JobCtg).toBeVisible();
   await expect(listeDeroulante_Wk).toBeVisible();
+
+  // Sélectionner une option dans la liste déroulante
+  await page.locator('[role="menuitem"] >> text=Job Titles').click();
+
+  await expect(page).toHaveURL(
+    "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewJobTitleList",
+  );
+});
+
+test("Liste dynamique", async ({ page }) => {
+  // Ouvrir la liste User Roles
+  await page.locator(".oxd-select-text--after").nth(0).click();
+  await expect(page.locator('[role="listbox"]')).toBeVisible();
+
+  // Choisir les options
+  await page.locator('[role="listbox"] >> text=Admin').click();
+  await expect(page.locator(".oxd-select-text-input").nth(0)).toHaveText(
+    "Admin",
+  );
+
+  await page.locator(".oxd-select-text--after").nth(0).click();
+  await page.locator('[role="listbox"] >> text=ESS').click();
+  await expect(page.locator(".oxd-select-text-input").nth(0)).toHaveText("ESS");
 });
