@@ -7,7 +7,7 @@ Tests end-to-end pour application web frontend, basés sur [Playwright](https://
 ## 📁 Architecture des tests
 
 ```
-zotoshop-tests/
+projet-tests/
 ├── tests/
 │   ├── auth/                  # Tests end-to-end par fonctionnalité
 │   │   ├── login.spec.js      # Authentification (login, compte bloqué, messages erreur)
