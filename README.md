@@ -1,3 +1,18 @@
-# Playwright
+# 🎭 Playwright Tests
 
-Voici quelques méthodes à utiliser sur Playwright
+Tests end-to-end pour application web frontend, basés sur [Playwright](https://playwright.dev/).
+
+---
+
+## 📁 Architecture des tests
+
+```
+zotoshop-tests/
+├── tests/
+│   ├── auth/                  # Tests end-to-end par fonctionnalité
+│   │   ├── login.spec.js      # Authentification (login, compte bloqué, messages erreur)
+│   │   └── logout.spec.js     # Déconnexion 
+├── playwright.config.ts       # Configuration principale
+└── README.md
+
+```
