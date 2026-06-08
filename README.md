@@ -18,11 +18,9 @@ projet-tests/
 │   │   ├── date.spec.js                 # Bouton radio
 │   │   ├── datePicker.spec.js           # Calendrier 
 │   │   ├── datePicker.spec.ts           # Calendrier
-│   │   ├── fill_and_type.spec.js        # Remplir un champ 
-│   │   ├── bouton_radio.spec.js         # Bouton radio
-│   │   ├── bouton_radio.spec.js         # Bouton radio
-│   │   ├── bouton_radio.spec.js         # Bouton radio
-│   │   ├── bouton_radio.spec.js         # Bouton radio 
+│   │   ├── fill_and_type.spec.js        # Remplir un champ avec fill & type 
+│   │   ├── listDeroulante.spec.js       # Liste déroulante 
+│   │   ├── selecteurs.spec.js           # Sélecteurs possibles 
 │   │   └── webTable.spec.js             # Tableaux
 ├── playwright.config.ts                 # Configuration principale
 └── README.md
