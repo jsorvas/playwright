@@ -12,6 +12,8 @@ projet-tests/
 │   ├── auth/                            # Tests end-to-end par fonctionnalité
 │   │   ├── login.spec.js                # Authentification (login, compte bloqué, messages erreur)
 │   │   └── logout.spec.js               # Déconnexion
+│   ├── catalog/                         # Tests end-to-end par fonctionnalité
+│   │   └── browse.spec.js               # Catalogue
 interactions-web/                # Interactions sur les éléments web
 │   ├── bouton_radio.spec.js         # Bouton radio 
 │   ├── checkbox.spec.js             # Cases
