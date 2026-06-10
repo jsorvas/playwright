@@ -14,6 +14,8 @@ projet-tests/
 │   │   └── logout.spec.js               # Déconnexion
 │   ├── catalog/                         # Tests end-to-end par fonctionnalité
 │   │   └── browse.spec.js               # Catalogue
+│   ├── product/                         # Tests end-to-end par fonctionnalité
+│   │   └── product.spec.js              # Produits
 interactions-web/                # Interactions sur les éléments web
 │   ├── bouton_radio.spec.js         # Bouton radio 
 │   ├── checkbox.spec.js             # Cases
