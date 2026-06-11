@@ -15,17 +15,18 @@ projet-tests/
 │   ├── catalog/                         # Tests end-to-end par fonctionnalité
 │   │   └── browse.spec.js               # Catalogue
 │   ├── product/                         # Tests end-to-end par fonctionnalité
-│   │   └── product.spec.js              # Produits
-interactions-web/                # Interactions sur les éléments web
-│   ├── bouton_radio.spec.js         # Bouton radio 
-│   ├── checkbox.spec.js             # Cases
-│   ├── date.spec.js                 # Bouton radio
-│   ├── datePicker.spec.js           # Calendrier 
-│   ├── datePicker.spec.ts           # Calendrier
-│   ├── fill_and_type.spec.js        # Remplir un champ avec fill & type 
-│   ├── listDeroulante.spec.js       # Liste déroulante 
-│   ├── selecteurs.spec.js           # Sélecteurs possibles 
-│   └── webTable.spec.js             # Tableaux
+│   │   ├── product.spec.js              # Produits
+│   │   └── view-product.spec.js         # Vérifications infos Produits
+interactions-web/                        # Interactions sur les éléments web
+│   ├── bouton_radio.spec.js             # Bouton radio 
+│   ├── checkbox.spec.js                 # Cases
+│   ├── date.spec.js                     # Bouton radio
+│   ├── datePicker.spec.js               # Calendrier 
+│   ├── datePicker.spec.ts               # Calendrier
+│   ├── fill_and_type.spec.js            # Remplir un champ avec fill & type 
+│   ├── listDeroulante.spec.js           # Liste déroulante 
+│   ├── selecteurs.spec.js               # Sélecteurs possibles 
+│   └── webTable.spec.js                 # Tableaux
 ├── playwright.config.ts                 # Configuration principale
 └── README.md
 
