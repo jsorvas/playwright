@@ -17,6 +17,7 @@ projet-tests/
 │   ├── product/                         # Tests end-to-end par fonctionnalité
 │   │   ├── product.spec.js              # Produits
 │   │   └── view-product.spec.js         # Vérifications infos Produits
+├── playwright.config.ts                 # Configuration principale
 interactions-web/                        # Interactions sur les éléments web
 ├── tests/
 │   ├── assertions.spec.js               # Assertions
