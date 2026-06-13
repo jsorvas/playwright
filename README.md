@@ -18,6 +18,9 @@ projet-tests/
 │   │   ├── product.spec.js              # Produits
 │   │   └── view-product.spec.js         # Vérifications infos Produits
 interactions-web/                        # Interactions sur les éléments web
+├── tests/
+│   ├── assertions.spec.js               # Assertions
+│   ├── autoWaiting.spec.js              # Auto waiting
 │   ├── bouton_radio.spec.js             # Bouton radio 
 │   ├── checkbox.spec.js                 # Cases
 │   ├── date.spec.js                     # Bouton radio
@@ -25,8 +28,11 @@ interactions-web/                        # Interactions sur les éléments web
 │   ├── datePicker.spec.ts               # Calendrier
 │   ├── fill_and_type.spec.js            # Remplir un champ avec fill & type 
 │   ├── listDeroulante.spec.js           # Liste déroulante 
-│   ├── selecteurs.spec.js               # Sélecteurs possibles 
+│   ├── selecteurs.spec.js               # Sélecteurs possibles
+│   ├── timeOut.spec.js                  # Sélecteurs possibles
+│   ├── variablesEnv.spec.js             # Tests avec variables d'environnements 
 │   └── webTable.spec.js                 # Tableaux
+├── .env.example                         # Varaibles d'environnements 
 ├── playwright.config.ts                 # Configuration principale
 └── README.md
 
