@@ -32,7 +32,7 @@ interactions-web/                        # Interactions sur les éléments web
 │   ├── timeOut.spec.js                  # Sélecteurs possibles
 │   ├── variablesEnv.spec.js             # Tests avec variables d'environnements 
 │   └── webTable.spec.js                 # Tableaux
-├── .env.example                         # Varaibles d'environnements 
+├── .env.example                         # Variables d'environnements 
 ├── playwright.config.ts                 # Configuration principale
 └── README.md
 
